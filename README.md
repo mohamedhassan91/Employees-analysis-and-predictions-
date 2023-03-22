@@ -118,3 +118,11 @@ RMSE: 11423.460887551772
 R2 Square 0.3644406809271965
 ```
 The R2 score for all models are not good enogh we defintely will need more items more related to the target like the numbers of the experience so the model could learn and give us better result but if we go for these score will go for lasso regressor most dummy features got correlated with the goal and consider less for MAE
+
+###Visulaization on Tableua
+
+![image](https://user-images.githubusercontent.com/60258264/226905639-f5d0a11f-3c5d-42c4-80cb-877722a4a440.png)
+
+***Link of the dashboard***
+
+https://public.tableau.com/app/profile/mohamed.hassan6266/viz/EmployeesDashboard_16785548922490/EmployeesDashboard
