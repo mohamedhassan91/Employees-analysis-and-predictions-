@@ -26,6 +26,19 @@ select * from dept_emp;
 ```
 ![image](https://user-images.githubusercontent.com/60258264/226901414-d329e8c9-64aa-400f-90fa-b9ed2a2db145.png)
 
+
+***Every employee with his salary , departments and the avg salary of his departments***
+```
+select e.emp_no , s.salary , d.dept_name ,
+avg(salary) over(partition by dept_name) as avg_sal_dept
+from employees e left join salaries s on e.emp_no = s.emp_no
+join dept_emp dm on e.emp_no = dm.emp_no
+join departments d on d.dept_no = dm.dept_no
+where salary is not null
+group by emp_no
+order by emp_no; 
+```
+
 ### EDA
 
 ***Gender count*** 
